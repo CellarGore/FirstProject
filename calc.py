@@ -68,7 +68,7 @@ def exp_check(req_exp, file_name = "exp.log", per_day = 25):
     print("Balance would be: $ %.2f" % take_exp)
 
 if __name__ == "__main__":
-    #store_exp()
-    #store_exp(new_day = False)
-    calc_bal("exp.log", 25)
-    exp_check(14.92)
+    store_exp()
+    store_exp(new_day = False)
+    #calc_bal("exp.log", 25)
+    #exp_check(14.92)
