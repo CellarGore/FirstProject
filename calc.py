@@ -18,7 +18,10 @@ def store_exp(file_name = "exp.log", new_day = True):
 
         except EOFError:
             file_obj.close()
-            print("\n** Ending Session **\n")
+            if new_day:
+                print("\n** Ending Initial Entry For Current Day **\n")
+            else:
+                print("\n** Ending Session **\n")
             return
 
     
@@ -70,5 +73,5 @@ def exp_check(req_exp, file_name = "exp.log", per_day = 25):
 if __name__ == "__main__":
     store_exp()
     store_exp(new_day = False)
-    #calc_bal("exp.log", 25)
+    calc_bal("exp.log", 20)
     #exp_check(14.92)
