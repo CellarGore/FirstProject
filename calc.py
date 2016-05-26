@@ -13,6 +13,7 @@ def store_exp(file_name = "exp.log", new_day = True):
         try:
             if new_day:
                 cur_exp = raw_input("Enter Amount For %s $ " % time_now)
+                new_day = False
             else:
                 cur_exp = raw_input("Enter Additional Amount For %s $ " % time_now)
 
